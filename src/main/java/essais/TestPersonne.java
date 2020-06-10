@@ -1,5 +1,6 @@
 package essais;
 
+import entites.AdressePostale;
 import entites.Personne;
 
 
@@ -9,12 +10,15 @@ public class TestPersonne {
 		Personne a = new Personne();
 		a.nom = "Dupont";
 		a.prenom = "Yann";
-		a.adressePostale = "Paris";
+		a.adresse = new AdressePostale();
+		a.adresse.codePostal = 14000;
+		a.adresse.numeroRue = 189;
 		
 		Personne b = new Personne();
 		b.nom = "Monsieur";
 		b.prenom = "Jean";
-		b.adressePostale = "Toulouse";
+		b.adresse = new AdressePostale();
+		b.adresse.ville = "Paris";
 			
 		
 
