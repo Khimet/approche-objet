@@ -22,6 +22,11 @@ public class TestPersonne {
 		b.adresse.ville = "Paris";
 		
 		System.out.println(a.adresse.codePostal);
+		
+		// TP 3
+		Personne c = new Personne("Jean", "Neymar");
+		c.changerAdresse(new AdressePostale(2,  "Parc des princes", 13000, "Marseille"));
+		System.out.println(c.adresse.codePostal);
 			
 		
 
