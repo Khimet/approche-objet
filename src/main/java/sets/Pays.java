@@ -1,5 +1,7 @@
 package sets;
 
+import fr.diginamic.enumerations.Continent;
+
 /**
  * @author Khalil HIMET
  *
@@ -7,6 +9,7 @@ package sets;
 public class Pays implements Comparable<Pays>{
 	
 	private String nom;
+	private Continent continent;
 	private long nbHabitants;
 	private long pibHab;
 	
@@ -15,16 +18,17 @@ public class Pays implements Comparable<Pays>{
 	 * @param nbHabitants
 	 * @param pibHab
 	 */
-	public Pays(String nom, long nbHabitants, long pibHab) {
+	public Pays(String nom, long nbHabitants, long pibHab, Continent continent) {
 		super();
 		this.nom = nom;
 		this.nbHabitants = nbHabitants;
 		this.pibHab = pibHab;
+		this.continent = continent;
 	}
 	
 	public String toString() {
 		
-		return "nom: " + nom + " Nombre d'habitants: " + nbHabitants + " PIB/hab: " + pibHab;
+		return "nom: " + nom + " Nombre d'habitants: " + nbHabitants + " PIB/hab: " + pibHab + " Continent : " + continent;
 	}
 	
 //	@Override
@@ -72,6 +76,20 @@ public class Pays implements Comparable<Pays>{
 
 	public void setPibHab(long pibHab) {
 		this.pibHab = pibHab;
+	}
+
+	/** Getter
+	 * @return the continent
+	 */
+	public Continent getContinent() {
+		return continent;
+	}
+
+	/** Setter
+	 * @param continent the continent to set
+	 */
+	public void setContinent(Continent continent) {
+		this.continent = continent;
 	}
 	
 	
