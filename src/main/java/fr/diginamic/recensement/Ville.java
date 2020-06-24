@@ -18,7 +18,7 @@ public class Ville {
 	/** Nom de la commune*/
 	private String nomCommune;
 	/** nombre de la population totale*/
-	private long nbPopTotale;
+	private int nbPopTotale;
 	
 	/** Constructeur
 	 * @param codeRegion Numéro de code de la région
@@ -29,7 +29,7 @@ public class Ville {
 	 * @param nbPopTotale Nombre de la population totale
 	 */
 	public Ville(String codeRegion, String nomRegion, String codeDepartment, String codeCommune, String nomCommune,
-			long nbPopTotale) {
+			int nbPopTotale) {
 		super();
 		this.codeRegion = codeRegion;
 		this.nomRegion = nomRegion;
@@ -38,6 +38,15 @@ public class Ville {
 		this.nomCommune = nomCommune;
 		this.nbPopTotale = nbPopTotale;
 	}
+	
+	
+
+	@Override
+	public String toString() {
+		return "Ville: " + nomCommune + " Population totale: " + nbPopTotale;
+	}
+
+
 
 	/** Getter
 	 * @return the codeRegion
@@ -112,14 +121,14 @@ public class Ville {
 	/** Getter
 	 * @return the nbPopTotale
 	 */
-	public long getNbPopTotale() {
+	public int getNbPopTotale() {
 		return nbPopTotale;
 	}
 
 	/** Setter
 	 * @param nbPopTotale the nbPopTotale to set
 	 */
-	public void setNbPopTotale(long nbPopTotale) {
+	public void setNbPopTotale(int nbPopTotale) {
 		this.nbPopTotale = nbPopTotale;
 	}
 	
