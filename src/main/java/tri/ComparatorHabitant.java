@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 import sets.Pays;
 
-/**
+/** Comparateur qui tri les pays sur la population
  * @author Khalil HIMET
  *
  */

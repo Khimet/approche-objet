@@ -5,10 +5,11 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 
+import fr.diginamic.enumerations.Continent;
 import tri.ComparatorHabitant;
 import tri.ComparatorPibHabitant;
 
-/**
+/** Classe éxécutable qui permet de manipuler les sets 
  * @author Khalil HIMET
  *
  */
@@ -22,15 +23,15 @@ public class TestPays {
 		
 		HashSet<Pays> setPays = new HashSet<>();
 		
-		setPays.add(new Pays("USA", 332_639_000, 59_495));
-        setPays.add(new Pays("France", 67_064_000, 43_551));
-        setPays.add(new Pays("Allemagne", 83_149_300, 50_206));
-        setPays.add(new Pays("UK", 66_436_000, 43_620));
-        setPays.add(new Pays("Italie", 60_317_000, 37_970));
-        setPays.add(new Pays("Japon", 126_010_000, 42_659));
-        setPays.add(new Pays("Chine", 1_400_050_000, 16_624));
-        setPays.add(new Pays("Russie", 146_748_590, 28_712));
-        setPays.add(new Pays("Inde", 1_368_163_000, 5_174));
+		setPays.add(new Pays("USA", 332_639_000, 59_495, Continent.AMERIQUE));
+		setPays.add(new Pays("France", 67_064_000, 43_551, Continent.EURASIE));
+		setPays.add(new Pays("Allemagne", 83_149_300, 50_206, Continent.EURASIE));
+		setPays.add(new Pays("UK", 66_436_000, 43_620, Continent.EURASIE));
+		setPays.add(new Pays("Italie", 60_317_000, 37_970, Continent.EURASIE));
+		setPays.add(new Pays("Japon", 126_010_000, 42_659, Continent.EURASIE));
+		setPays.add(new Pays("Chine", 1_400_050_000, 16_624, Continent.EURASIE));
+		setPays.add(new Pays("Russie", 146_748_590, 28_712, Continent.EURASIE));
+		setPays.add(new Pays("Inde", 1_368_163_000, 5_174, Continent.EURASIE));
         
         //Recherche du pays avec le PIB/hab le plus important
         long max = Long.MIN_VALUE;

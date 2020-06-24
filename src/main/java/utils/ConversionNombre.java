@@ -1,5 +1,9 @@
 package utils;
 
+/** Classe éxecutable qui permet de manipuler les nombres entiers
+ * @author Khalil HIMET
+ *
+ */
 public class ConversionNombre {
 	public static void main(String[] args) {
 		String nb = "1";
